@@ -1,0 +1,17 @@
+digraph G {
+"robot_base_link" -> "robot_back_left_wheel_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 50.211 Hz\nMost recent transform: 16.805 ( 0.018 sec old)\nBuffer length: 4.740 sec\n"];
+"robot_base_footprint" -> "robot_base_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.823 sec old)\nBuffer length: 0.000 sec\n"];
+"robot_base_link" -> "robot_back_right_wheel_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 50.211 Hz\nMost recent transform: 16.805 ( 0.018 sec old)\nBuffer length: 4.740 sec\n"];
+"robot_base_link" -> "robot_front_left_wheel_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 50.211 Hz\nMost recent transform: 16.805 ( 0.018 sec old)\nBuffer length: 4.740 sec\n"];
+"robot_base_link" -> "robot_front_right_wheel_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 50.211 Hz\nMost recent transform: 16.805 ( 0.018 sec old)\nBuffer length: 4.740 sec\n"];
+"robot_odom" -> "robot_base_footprint"[label="Broadcaster: /gazebo\nAverage rate: 47.840 Hz\nMost recent transform: 16.821 ( 0.002 sec old)\nBuffer length: 4.745 sec\n"];
+"robot_base_link" -> "robot_front_laser_base_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.823 sec old)\nBuffer length: 0.000 sec\n"];
+"robot_front_laser_base_link" -> "robot_front_laser_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.823 sec old)\nBuffer length: 0.000 sec\n"];
+"robot_base_link" -> "robot_imu_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.823 sec old)\nBuffer length: 0.000 sec\n"];
+"robot_base_link" -> "robot_rear_laser_base_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.823 sec old)\nBuffer length: 0.000 sec\n"];
+"robot_rear_laser_base_link" -> "robot_rear_laser_link"[label="Broadcaster: /robot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.823 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 16.823"[ shape=plaintext ] ;
+ }->"robot_odom";
+}

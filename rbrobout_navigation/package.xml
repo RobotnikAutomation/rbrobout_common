@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>rbrobout_navigation</name>
+  <version>1.1.3</version>
+  <description> Navigation launch and config files for RB-Robout robot. </description>
+
+  <author email="avillena@robotnik.es">Álvaro Villena</author>
+  <maintainer email="avillena@robotnik.es">Álvaro Villena</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>teb_local_planner</run_depend>
+  <run_depend>move_base</run_depend>
+  <run_depend>global_planner</run_depend>
+
+</package>

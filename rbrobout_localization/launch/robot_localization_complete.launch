@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- roslaunch arguments -->
+  <arg name="id_robot" default="$(optenv ROBOT_ID robot)"/>
+  <arg name="prefix" default="$(arg id_robot)_"/>
+
+  <!-- Transform from odom to base_footprint (IMU and odometry) -->
+  <include file="$(find rbrobout_localization)/launch/robot_localization_odom.launch">
+	  <arg name="prefix" value="$(arg prefix)"/>
+  </include>
+
+  <!-- Transform from world to odom (IMU, odometry and GPS) -->
+  <include file="$(find rbrobout_localization)/launch/robot_localization_world.launch">
+	  <arg name="prefix" value="$(arg prefix)"/>
+  </include>
+
+</launch>
