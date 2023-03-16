@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-	<arg name="config_package" default="$(optenv ROBOT_LOCALIZATION_CONFIG_PACKAGE rbeken_localization)"/>
+	<arg name="config_package" default="$(optenv ROBOT_LOCALIZATION_CONFIG_PACKAGE rbrobout_localization)"/>
   	<arg name="maps_folder" default="maps"/>
   	<arg name="maps_path" default="$(eval find(config_package) + '/' + maps_folder)"/>
 
