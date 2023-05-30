@@ -75,6 +75,15 @@
 			<origin xyz="-0.8 -0.366 -0.06" rpy="0 0 ${-3/4*PI}"/>
 		</xacro:sensor_sick_microscan3>
 
+
+		<xacro:sensor_intel_d435 prefix="$(arg prefix)front_rgbd_camera" parent="$(arg prefix)base_link" prefix_topic="front_rgbd_camera">
+      		<origin xyz="0.835 0  0.1555" rpy="0 0 0"/>
+    	</xacro:sensor_intel_d435>
+    	
+    		<xacro:sensor_intel_d435 prefix="$(arg prefix)rear_rgbd_camera" parent="$(arg prefix)base_link" prefix_topic="rear_rgbd_camera">
+      		<origin xyz="-0.835 0  0.1555" rpy="0 ${PI} 0"/>
+    	</xacro:sensor_intel_d435>
+
 		<!-- magnetic sensors  -->
 		<!--xacro:sick_mls prefix="$(arg prefix)left_mls" parent="$(arg prefix)base_link">
 			<origin xyz="0.1085 -0.3045 -0.09137" rpy="0 0 ${1/2*PI}"/>
